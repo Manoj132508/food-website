@@ -1,0 +1,10 @@
+@media (max-width: 767px) {
+  .sidebutton {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .bottombutton {
+    display: none;
+  }
+}
