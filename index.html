@@ -4,405 +4,378 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>food website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
     <link rel="stylesheet" href="index.css">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
 </head>
 <body>
-    <div class="grid grid-cols-1 md:grid-cols-12 >">
-        <div class="col-span-1 flex flex-col items-center justify-center md:col-span-12 md:flex-row md:items-start md:justify-between md:items-center ">
+    <div class="grid md:grid-cols-12">
+        <div class="col-span-1 flex flex-col items-center justify-center md:col-span-12 md:flex-row md:items-center md:justify-between sticky top-0 z-50 bg-white shadow-md px-6 py-3">
            <div class="flex items-center justify-center ">
             <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="logo" class="w-8 h-8 ">
             <h1 class="text-3xl font-bold text-center m-0">Food Website</h1>
             </div>
             <div class="flex items-center justify-center ">
-                <h2 class="text-lg font-semibold text-center">Deliver to:<span class="material-symbols-outlined text-yellow-500 we">
+                <h2 class="text-lg font-semibold text-center">Deliver to:<span class="material-symbols-outlined text-yellow-500">
                     location_on</span><span class="text-gray-600"> current location</span> Nisa milburn</h2>
             </div>
             <div class="flex items-center justify-center align-middle">
                 <span class="material-symbols-outlined text-yellow-500 -mr-6">
                     search</span>
-                <input type="text" placeholder="Search for food" class="  m-0 w-2/3 text-center font-bold">
-                <button class="bg-white text-yellow-500 font-bold text-sm ml-2 px-2 py-1 rounded-xl hover:bg-yellow-600 hover:text-white cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300">
-                    login
+                <input type="text" placeholder="Search for food" class="m-0 w-2/3 font-bold border border-gray-300 rounded-lg pl-8 py-1 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                <button class="bg-white border-2 border-yellow-500 text-yellow-500 font-bold text-sm ml-2 px-4 py-1 rounded-xl hover:bg-yellow-500 hover:text-white cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300">
+                    Login
                 </button>
             </div>
          </div>
  <div class="col-span-1 md:col-span-12 bg-yellow-500 h-auto my-4"> 
                 <div class="grid grid-cols-12 ">
                     <div class="col-span-12 md:col-span-6 flex flex-col items-center justify-center">
-                        <div class="flex items-center justify-center flex-col md:items-start md:justify-start md:mt ">      
-                            <h2 class="text-2xl font-bold  text-4xl text-left text-white">Are you starving?</h2>
+                        <div class="flex items-center justify-center flex-col md:items-start md:justify-start md:mt-6 md:pl-8">
+                            <h2 class="font-bold text-4xl text-left text-white">Are you starving?</h2>
                             <p class="text-gray-600 text-left">Within a few clicks, find meals that are accessible near you</p>
                         </div>
                         
-                        <div class="flex  flex-col h-27 border-2 border-gray-300 w-110 rounded-xl bg-white items-start ml-none mt-4">  
-                        <div class="flex items-center justify-center"> 
-                            <button class="bg-orange-100 text-grey-800 font-bold  ml-2 px-5  mt-1 py-1 flex  flex justify-center items-center hover: hover:bg-yellow-300 hover:text-white cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300">
-                                
-                                  <i class="fa-solid fa-xl   fa-motorcycle mr-2 -ml-3"></i>Delivery 
+                        <div class="flex flex-col border-2 border-gray-300 w-[27.5rem] max-w-full rounded-xl bg-white items-start mt-4">
+                        <div class="flex items-center justify-center">
+                            <button class="bg-orange-100 text-gray-800 font-bold ml-2 px-5 mt-1 py-1 flex justify-center items-center hover:bg-yellow-300 hover:text-white cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300">
+                                  <i class="fa-solid fa-xl fa-motorcycle mr-2 -ml-3"></i>Delivery 
                             </button>
-                        
-                            
-                             <button class="bg-white-600 text border border-1  border-gray-200 font-bold ml-1  mt-1 px-3  py-[3px]  flex justify-center items-center hover:bg-yellow-300 hover:text-white cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300">
-                               <span class="material-symbols-outlined mr-2 -ml-2">
-local_mall
-</span>                          Pickup
+                             <button class="bg-white border border-gray-200 font-bold ml-1 mt-1 px-3 py-[3px] flex justify-center items-center hover:bg-yellow-300 hover:text-white cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300">
+                               <span class="material-symbols-outlined mr-2 -ml-2">local_mall</span>Pickup
                             </button>
                         </div>
-                        <div class="flex  items-center justify-center mt-4">
-                            <span class="material-symbols-outlined text-yellow-500 we">
-                    location_on</span>
-                            <input type="text" placeholder="Enter your address" class="w-70 h-10  font-bold pl- ">
-                            <button class="bg-orange-300 text500 text-white font-bold ml-2 px-5 py-1 rounded-xl hover:bg-yellow-600 hover:text-white cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300">
+                        <div class="flex items-center justify-center mt-4">
+                            <span class="material-symbols-outlined text-yellow-500">location_on</span>
+                            <input type="text" placeholder="Enter your address" class="w-[17.5rem] max-w-full h-10 font-bold pl-2">
+                            <button class="bg-orange-300 text-white font-bold ml-2 px-5 py-1 rounded-xl hover:bg-yellow-600 hover:text-white cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300">
                                 Find Food
                             </button>
                         </div>
-                        
-                    </div>
+                        </div>
                     </div> 
-                <div class="col-span-12 md:col-span-6 flex items-center justify-center mr-20">
-                  <img
-                        src="heroheader.png"
-                        alt="food image"
-                        class="w-90 h-60 max-w-md object-cover shrink-0  "
-                        >
+                <div class="col-span-12 md:col-span-6 flex items-center justify-center md:mr-20">
+                  <img src="heroheader.png" alt="Delicious food platter with various dishes"
+                        class="w-[22.5rem] max-w-md h-60 object-cover shrink-0">
                 </div>
-
             </div>
         </div>
-            <div class=" mt-30  md:mt-5 md:col-span-12 flex items-center justify-center ">
-              <div class="flex items-center justify-center flex-col">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Mega Deals</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="bg-white rounded-lg shadow-md p-4">
-                        <img src="sub1.png" alt="Restaurant 1" class="w-full h-40 object-cover rounded-md mb-4" >
-                        <span class=" w-10 h-8 text-[12px] rounded-tr-xl bg-orange-500 text-white font-semibold spacing-none  text-center px-2 -mt-10 ">15% off
-</span>
-                        <h3 class="text-lg font-semibold text-gray-800">Greys Vage</h3>
-                        <p class="text-violet-600 font-bold bg-red-300 ml-0 rounded-lg shadow-md p-2">6 days remaining.</p>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-4">
-                        <img src="sub2.png" alt="Restaurant 2" class="w-full h-40 object-cover rounded-md mb-4" >
-                        <span class=" w-10 h-8 text-[12px] rounded-tr-xl bg-orange-500 text-white font-semibold spacing-none  text-center px-2 -mt-10 ">20% off
-</span>
-                        <h3 class="text-lg font-semibold text-gray-800">Greys Vage</h3>
-                        <p class="text-violet-600 font-bold bg-red-300 ml-0 rounded-lg shadow-md p-2">6 days remaining.</p>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-4">
-                        <img src="sub3.png" alt="Restaurant 3" class="w-full h-40 object-cover rounded-md mb-4">
-                        <span class=" w-10 h-8 text-[12px] rounded-tr-xl bg-orange-500 text-white font-semibold spacing-none  text-center px-2 -mt-10 ">30% off
-</span>
-                        <h3 class="text-lg font-semibold text-gray-800">Greys Vage</h3>
-                        <p class="text-violet-600 font-bold bg-red-300 ml-0 rounded-lg shadow-md p-2">6 days remaining.</p>
-                    </div>
-                     <div class="bg-white rounded-lg shadow-md p-4">
-                        <img src="sub4.png" alt="Restaurant 4" class="w-full h-40 object-cover rounded-md mb-4">
-                        <span class=" w-10 h-8 text-[12px] rounded-tr-xl bg-orange-500 text-white font-semibold spacing-none  text-center px-2 -mt-10 ">30% off
-</span>
-                        <h3 class="text-lg font-semibold text-gray-800">Greys Vage</h3>
-                        <p class="text-violet-600 font-bold bg-red-300 ml-0 rounded-lg shadow-md p-2">6 days remaining.</p>
-                    </div>
+
+        <div class="mt-5 md:col-span-12 flex items-center justify-center">
+          <div class="flex items-center justify-center flex-col">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Mega Deals</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white rounded-lg shadow-md p-4 relative">
+                    <img src="sub1.png" alt="Greys Vage restaurant special deal" class="w-full h-40 object-cover rounded-md mb-4">
+                    <span class="absolute top-3 left-3 text-[12px] rounded-tr-xl bg-orange-500 text-white font-semibold text-center px-2 py-0.5">15% off</span>
+                    <h3 class="text-lg font-semibold text-gray-800">Greys Vage</h3>
+                    <p class="text-violet-600 font-bold bg-red-300 ml-0 rounded-lg shadow-md p-2">6 days remaining.</p>
                 </div>
-                
-    
-             </div>
+                <div class="bg-white rounded-lg shadow-md p-4 relative">
+                    <img src="sub2.png" alt="Burger King special deal" class="w-full h-40 object-cover rounded-md mb-4">
+                    <span class="absolute top-3 left-3 text-[12px] rounded-tr-xl bg-orange-500 text-white font-semibold text-center px-2 py-0.5">20% off</span>
+                    <h3 class="text-lg font-semibold text-gray-800">Burger King</h3>
+                    <p class="text-violet-600 font-bold bg-red-300 ml-0 rounded-lg shadow-md p-2">6 days remaining.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4 relative">
+                    <img src="sub3.png" alt="Pizza Hut special deal" class="w-full h-40 object-cover rounded-md mb-4">
+                    <span class="absolute top-3 left-3 text-[12px] rounded-tr-xl bg-orange-500 text-white font-semibold text-center px-2 py-0.5">30% off</span>
+                    <h3 class="text-lg font-semibold text-gray-800">Pizza Hut</h3>
+                    <p class="text-violet-600 font-bold bg-red-300 ml-0 rounded-lg shadow-md p-2">6 days remaining.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4 relative">
+                    <img src="sub4.png" alt="KFC special deal" class="w-full h-40 object-cover rounded-md mb-4">
+                    <span class="absolute top-3 left-3 text-[12px] rounded-tr-xl bg-orange-500 text-white font-semibold text-center px-2 py-0.5">30% off</span>
+                    <h3 class="text-lg font-semibold text-gray-800">KFC</h3>
+                    <p class="text-violet-600 font-bold bg-red-300 ml-0 rounded-lg shadow-md p-2">6 days remaining.</p>
+                </div>
+            </div>
           </div>
- <div class="w-full my-10  bg-gradient-to-bl from-violet-200 to-fuchsia-200 md:col-span-12 flex items-center justify-center ">
-    <div class="flex items-center justify-center flex-col">
-        <h2 class="text-2xl font-bold text-gray-800 text-center mb-12">
-            How does it work
-        </h2>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            
-            <!-- Step 1 -->
-            <div class="flex flex-col items-center text-center">
-                <img src="Map Marker.png" alt="Location" class="w-28 h-28 object-contain">
-                <h3 class="text-lg font-semibold text-gray-800 mt-4">
-                    Select Location
-                </h3>
-                <p class="text-gray-600 mt-2">
-                    Choose your location to find the best food near you.
-                </p>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="flex flex-col items-center text-center">
-                <img src="Menu.png" alt="Order" class="w-28 h-28 object-contain">
-                <h3 class="text-lg font-semibold text-gray-800 mt-4">
-                    Choose Order
-                </h3>
-                <p class="text-gray-600 mt-2">
-                    Browse through a wide variety of cuisines and select your favorite dishes.
-                </p>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="flex flex-col items-center text-center">
-                <img src="Invoice.png" alt="Payment" class="w-28 h-28 object-contain">
-                <h3 class="text-lg font-semibold text-gray-800 mt-4">
-                    Pay in Advance
-                </h3>
-                <p class="text-gray-600 mt-2">
-                    It's quick, safe, and easy to pay.
-                </p>
-            </div>
-
-            <!-- Step 4 -->
-            <div class="flex flex-col items-center text-center">
-                <img src="Donut.png" alt="Meal" class="w-28 h-28 object-contain">
-                <h3 class="text-lg font-semibold text-gray-800 mt-4">
-                    Enjoy Your Meal
-                </h3>
-                <p class="text-gray-600 mt-2">
-                    Savor the delicious food we've prepared for you.
-                </p>
-            </div>
-         
-
         </div>
+
+        <div class="w-full my-10 bg-gradient-to-bl from-violet-200 to-fuchsia-200 md:col-span-12 flex items-center justify-center">
+            <div class="flex items-center justify-center flex-col">
+                <h2 class="text-2xl font-bold text-gray-800 text-center mb-12">How does it work</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="flex flex-col items-center text-center">
+                        <img src="Map Marker.png" alt="Location" class="w-28 h-28 object-contain">
+                        <h3 class="text-lg font-semibold text-gray-800 mt-4">Select Location</h3>
+                        <p class="text-gray-600 mt-2">Choose your location to find the best food near you.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="Menu.png" alt="Order" class="w-28 h-28 object-contain">
+                        <h3 class="text-lg font-semibold text-gray-800 mt-4">Choose Order</h3>
+                        <p class="text-gray-600 mt-2">Browse through a wide variety of cuisines and select your favorite dishes.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="Invoice.png" alt="Payment" class="w-28 h-28 object-contain">
+                        <h3 class="text-lg font-semibold text-gray-800 mt-4">Pay in Advance</h3>
+                        <p class="text-gray-600 mt-2">It's quick, safe, and easy to pay.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="Donut.png" alt="Meal" class="w-28 h-28 object-contain">
+                        <h3 class="text-lg font-semibold text-gray-800 mt-4">Enjoy Your Meal</h3>
+                        <p class="text-gray-600 mt-2">Savor the delicious food we've prepared for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-10 md:col-span-12 flex items-center justify-center">
+          <div class="flex items-center justify-center flex-col">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Popular Items</h2>
+            <div class="grid grid-cols-2 items-center md:grid-cols-12 md:grid gap-4">
+                <div class="sidebutton flex bg-white rounded-full shadow-md hover:bg-yellow-300 cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300 items-center justify-center flex-col w-12 h-12">
+                    <span class="material-symbols-outlined text-yellow-500 text-3xl font-bold transition duration-300 hover:text-white">chevron_left</span>
+                </div>
+                <div class="bg-white md:col-span-2 rounded-lg shadow-md p-4">
+                    <img src="Rectangle 336.png" alt="Cheese Burger from Burger Arena" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Cheese Burger</h3>
+                    <span class="flex items-center justify-start gap-1">
+                        <span class="material-symbols-outlined text-yellow-500 text-sm">location_on</span>
+                        <span class="text-yellow-500 text-lg">Burger Arena</span>
+                    </span>
+                    <button class="text-violet-600 font-bold w-full bg-red-300 ml-0 rounded-lg shadow-md p-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">Order Now</button>
+                </div>
+                <div class="bg-white md:col-span-2 rounded-lg shadow-md p-4">
+                    <img src="toffe.png" alt="Toffee Cake from Burger Arena" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Toffee Cake</h3>
+                    <span class="flex items-center justify-start gap-1">
+                        <span class="material-symbols-outlined text-yellow-500 text-sm">location_on</span>
+                        <span class="text-yellow-500 text-lg">Burger Arena</span>
+                    </span>
+                    <button class="text-violet-600 font-bold bg-red-300 ml-0 w-full rounded-lg shadow-md p-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">Order Now</button>
+                </div>
+                <div class="bg-white md:col-span-2 rounded-lg shadow-md p-4">
+                    <img src="doncake.png" alt="Donut Cake from Burger Arena" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Donut Cake</h3>
+                    <span class="flex items-center justify-start gap-1">
+                        <span class="material-symbols-outlined text-yellow-500 text-sm">location_on</span>
+                        <span class="text-yellow-500 text-lg">Burger Arena</span>
+                    </span>
+                    <button class="text-violet-600 font-bold bg-red-300 w-full ml-0 rounded-lg shadow-md p-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">Order Now</button>
+                </div>
+                <div class="bg-white md:col-span-2 rounded-lg shadow-md p-4">
+                    <img src="sandwich.png" alt="Sandwich from Burger Arena" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Sandwich</h3>
+                    <span class="flex items-center justify-start gap-1">
+                        <span class="material-symbols-outlined text-yellow-500 text-sm">location_on</span>
+                        <span class="text-yellow-500 text-lg">Burger Arena</span>
+                    </span>
+                    <button class="text-violet-600 font-bold bg-red-300 w-full ml-0 rounded-lg shadow-md p-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">Order Now</button>
+                </div>
+                <div class="bg-white md:col-span-2 rounded-lg shadow-md p-4">
+                    <img src="thai soup.png" alt="Thai Soup from Burger Arena" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Thai Soup</h3>
+                    <span class="flex items-center justify-start gap-1">
+                        <span class="material-symbols-outlined text-yellow-500 text-sm">location_on</span>
+                        <span class="text-yellow-500 text-lg">Burger Arena</span>
+                    </span>
+                    <button class="text-violet-600 font-bold bg-red-300 w-full ml-0 rounded-lg shadow-md p-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">Order Now</button>
+                </div>
+                <div class="sidebutton flex bg-white rounded-full shadow-md hover:bg-yellow-300 cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300 items-center justify-center w-12 h-12">
+                    <span class="material-symbols-outlined text-yellow-500 text-3xl font-bold transition duration-300 hover:text-white">chevron_right</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-full shadow-md flex bottombutton hover:bg-yellow-300 cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300 items-center justify-center w-12 h-12 mt-4">
+                <span class="material-symbols-outlined text-yellow-500 py-2 px-2 text-3xl font-bold hover:text-white">chevron_right</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full mb-10 h-auto bg-gradient-to-bl from-gray-200 to-rose-100 md:col-span-12 flex flex-col items-center justify-center pt-8">
+            <div class="flex items-center justify-center">
+                <h2 class="text-2xl font-bold text-gray-800 text-center mb-12">Featured Restaurants</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white relative">
+                    <span class="w-auto h-7 text-[16px] bg-orange-500 rounded text-white font-bold text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
+                    <span class="w-auto h-7 text-[16px] bg-yellow-500 rounded text-white font-bold text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
+                    <img src="foodword.png" alt="Foodworld restaurant food platter" class="w-full object-cover rounded-md mb-4">
+                    <div class="flex items-center justify-start px-1 py-1">
+                        <img src="foodworldimg.png" alt="Foodworld logo" class="w-10 h-10 border-2 border-white mb-1 object-cover">
+                        <div class="flex flex-col items-start ml-4 justify-start">
+                            <h3 class="text-lg font-semibold text-gray-800">Foodworld</h3>
+                            <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.1</span></span>
+                        </div>
+                    </div>
+                    <p class="text-white text-center w-3/5 font-bold bg-green-500 rounded-lg shadow-md py-2 mx-auto my-2">Open</p>
+                </div>
+                <div class="bg-white relative">
+                    <span class="w-auto h-7 text-[16px] bg-orange-500 rounded text-white font-bold text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
+                    <span class="w-auto h-7 text-[16px] bg-yellow-500 rounded text-white font-bold text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
+                    <img src="pizzahub1.png" alt="Pizzahub pizza dish" class="w-full object-cover rounded-md mb-4">
+                    <div class="flex items-center justify-start px-1 py-1">
+                        <img src="pizzaLogo.png" alt="Pizzahub logo" class="w-10 h-10 border-2 border-white object-cover">
+                        <div class="flex flex-col items-start ml-4 justify-start">
+                            <h3 class="text-lg font-semibold text-gray-800">Pizzahub</h3>
+                            <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.2</span></span>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 text-center w-3/5 font-bold bg-yellow-100 p-2 rounded-lg shadow-md mx-auto my-2">Open Tomorrow</p>
+                </div>
+                <div class="bg-white relative">
+                    <span class="w-auto h-7 text-[16px] bg-orange-500 rounded text-white font-bold text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
+                    <span class="w-auto h-7 text-[16px] bg-yellow-500 rounded text-white font-bold text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
+                    <img src="Image (8).png" alt="Donuts hut donut selection" class="w-full object-cover rounded-md mb-4">
+                    <div class="flex items-center justify-start px-1 py-1">
+                        <img src="donutslogo.png" alt="Donuts hut logo" class="w-10 h-10 border-2 border-white mb-1 object-cover">
+                        <div class="flex flex-col items-start ml-4 justify-start">
+                            <h3 class="text-lg font-semibold text-gray-800">Donuts hut</h3>
+                            <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.4</span></span>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 text-center w-3/5 font-bold bg-yellow-100 p-2 rounded-lg shadow-md mx-auto my-2">Open Tomorrow</p>
+                </div>
+                <div class="bg-white relative">
+                    <span class="w-auto h-7 text-[16px] bg-orange-500 rounded text-white font-bold text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
+                    <span class="w-auto h-7 text-[16px] bg-yellow-500 rounded text-white font-bold text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
+                    <img src="donut2.png" alt="Donuts hut specialty donut" class="w-full object-cover rounded-md mb-4">
+                    <div class="flex items-center justify-start px-1 py-1">
+                        <img src="Image (10).png" alt="Donuts hut alternate logo" class="w-10 h-10 border-2 border-white mb-1 object-cover">
+                        <div class="flex flex-col items-start ml-4 justify-start">
+                            <h3 class="text-lg font-semibold text-gray-800">Donuts hut</h3>
+                            <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.5</span></span>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 text-center w-3/5 font-bold bg-yellow-100 p-2 rounded-lg shadow-md mx-auto my-2">Open Tomorrow</p>
+                </div>
+                <div class="bg-white relative">
+                    <span class="w-auto h-7 text-[16px] bg-orange-500 rounded text-white font-bold text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
+                    <span class="w-auto h-7 text-[16px] bg-yellow-500 rounded text-white font-bold text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
+                    <img src="ruby.png" alt="Ruby Tuesday restaurant dish" class="w-full object-cover rounded-md mb-4">
+                    <div class="flex items-center justify-start px-1 py-1">
+                        <img src="rubylogo.png" alt="Ruby Tuesday logo" class="w-10 h-10 border-2 border-white rounded-full mb-1 object-cover">
+                        <div class="flex flex-col items-start ml-4 justify-start">
+                            <h3 class="text-lg font-semibold text-gray-800">Ruby Tuesday</h3>
+                            <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.9</span></span>
+                        </div>
+                    </div>
+                    <p class="text-white text-center w-3/5 font-bold bg-green-500 rounded-lg shadow-md py-2 mx-auto my-2">Open</p>
+                </div>
+                <div class="bg-white relative">
+                    <span class="w-auto h-7 text-[16px] bg-orange-500 rounded text-white font-bold text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
+                    <span class="w-auto h-7 text-[16px] bg-yellow-500 rounded text-white font-bold text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
+                    <img src="kfc.png" alt="KFC fried chicken bucket" class="w-full object-cover rounded-md mb-4">
+                    <div class="flex items-center justify-start px-1 py-1">
+                        <img src="kfclogo.png" alt="KFC logo" class="w-10 h-10 border-2 border-white rounded-full mb-1 object-cover">
+                        <div class="flex flex-col items-start ml-4 justify-start">
+                            <h3 class="text-lg font-semibold text-gray-800">KFC</h3>
+                            <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">3.5</span></span>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 text-center w-3/5 font-bold bg-yellow-100 p-2 rounded-lg shadow-md mx-auto my-2">Open Tomorrow</p>
+                </div>
+                <div class="bg-white relative">
+                    <span class="w-auto h-7 text-[16px] bg-orange-500 rounded text-white font-bold text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
+                    <span class="w-auto h-7 text-[16px] bg-yellow-500 rounded text-white font-bold text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
+                    <img src="red.png" alt="Red Square restaurant dish" class="w-full object-cover rounded-md mb-4">
+                    <div class="flex items-center justify-start px-1 py-1">
+                        <img src="redlogo.png" alt="Red Square logo" class="w-10 h-10 border-2 border-white rounded-full mb-1 object-cover">
+                        <div class="flex flex-col items-start ml-4 justify-start">
+                            <h3 class="text-lg font-semibold text-gray-800">Red Square</h3>
+                            <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.9</span></span>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 text-center w-3/5 font-bold bg-yellow-100 p-2 rounded-lg shadow-md mx-auto my-2">Open Tomorrow</p>
+                </div>
+                <div class="bg-white relative">
+                    <span class="w-auto h-7 text-[16px] bg-orange-500 rounded text-white font-bold text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
+                    <span class="w-auto h-7 text-[16px] bg-yellow-500 rounded text-white font-bold text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
+                    <img src="taco.png" alt="Taco Bell taco platter" class="w-full object-cover rounded-md mb-4">
+                    <div class="flex items-center justify-start px-1 py-1">
+                        <img src="tacologo.png" alt="Taco Bell logo" class="w-10 h-10 border-2 border-white rounded-full mb-1 object-cover">
+                        <div class="flex flex-col items-start ml-4 justify-start">
+                            <h3 class="text-lg font-semibold text-gray-800">Taco Bell</h3>
+                            <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.0</span></span>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 text-center w-3/5 font-bold bg-yellow-100 p-2 rounded-lg shadow-md mx-auto my-2">Open Tomorrow</p>
+                </div>
+            </div>
+            <div class="flex justify-center flex-row items-center text-center">
+                <button class="text-red-300 bg-cyan-500 shadow-lg shadow-cyan-500/50 font-bold w-full px-14 my-6 text-2xl rounded-xl shadow-md py-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">View All<i class="fa-solid fa-angle-right ml-2"></i></button>
+            </div>
+        </div>
+
+        <!-- Download App Section -->
+        <div class="w-full py-14 bg-gradient-to-r from-yellow-400 to-orange-500 md:col-span-12 flex flex-col items-center justify-center">
+            <h2 class="text-3xl font-bold text-white text-center mb-2">Get Our App</h2>
+            <p class="text-white text-center mb-8 opacity-90">Order food anytime, anywhere from your phone</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#" class="flex items-center bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition duration-300 gap-3">
+                    <i class="fa-brands fa-apple text-3xl"></i>
+                    <div>
+                        <p class="text-xs opacity-70">Download on the</p>
+                        <p class="font-bold text-lg leading-tight">App Store</p>
+                    </div>
+                </a>
+                <a href="#" class="flex items-center bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition duration-300 gap-3">
+                    <i class="fa-brands fa-google-play text-3xl"></i>
+                    <div>
+                        <p class="text-xs opacity-70">Get it on</p>
+                        <p class="font-bold text-lg leading-tight">Google Play</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w-full bg-gray-900 text-white md:col-span-12 py-12 px-6">
+            <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="logo" class="w-8 h-8">
+                        <span class="text-xl font-bold">Food Website</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Your favorite food, delivered fast to your door. Discover the best meals from top restaurants near you.</p>
+                    <div class="flex gap-4 mt-5">
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition duration-300"><i class="fa-brands fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition duration-300"><i class="fa-brands fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition duration-300"><i class="fa-brands fa-x-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition duration-300"><i class="fa-brands fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-yellow-400">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-yellow-400 transition duration-300">Home</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition duration-300">About Us</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition duration-300">Restaurants</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition duration-300">Popular Items</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition duration-300">Deals &amp; Offers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-yellow-400">Help</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-yellow-400 transition duration-300">FAQ</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition duration-300">Track Order</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-yellow-400">Contact</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-yellow-400"></i> +1 (555) 123-4567</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-yellow-400"></i> support@foodwebsite.com</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-location-dot text-yellow-400 mt-1"></i> 123 Food Street, Flavor Town, FT 90210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="max-w-6xl mx-auto border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-gray-500 text-sm">&copy; 2025 Food Website. All rights reserved.</p>
+                <div class="flex gap-4 text-gray-500 text-sm">
+                    <a href="#" class="hover:text-yellow-400 transition duration-300">Privacy</a>
+                    <a href="#" class="hover:text-yellow-400 transition duration-300">Terms</a>
+                    <a href="#" class="hover:text-yellow-400 transition duration-300">Cookies</a>
+                </div>
+            </div>
+        </footer>
+
     </div>
-</div>
-  <div class=" my-20  md:mt-5 md:col-span-12 flex items-center justify-center ">
-              <div class="flex items-center justify-center flex-col">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Mega Deals</h2>
-                <div class="grid grid-cols-2 items-center md:grid-cols-12 md:grid gap-4">
-                      <div class=" sidebutton flex bg-white rounded-full shadow-md  md:mt-0 hover:bg-yellow-300 cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300 items-center justify-center flex-col w-12 h-12 mt-30 mr-0">
-
-    <span class="material-symbols-outlined text-yellow-500 text-3xl font-bold   transition duration-300 hover:text-white">
-        chevron_left
-    </span>
-
-</div>
-                    <div class="bg-white  md:col-span-2 rounded-lg shadow-md p-4">
-                        <img src="Rectangle 336.png" alt="Restaurant 1" class="w-full h-40 object-cover rounded-md mb-4" >
-                        <h3 class="text-lg font-semibold text-gray-800">Cheese Buger</h3>
-                        <span class="flex items-center justify-start mt-[1px] -ml-[6px] ">
-                      <span class="material-symbols-outlined text-yellow-500 text-sm ">
-                            location_on   </span> <span class="text-yellow-500 text-lg">Burger Arena </span>
-                      </span>
-                           
-                        <button class="text-violet-600 font-bold w-full  bg-red-300 ml-0 rounded-lg shadow-md p-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">Order Now</button>
-                    </div>
-                    <div class="bg-white  md:col-span-2  rounded-lg shadow-md p-4">
-                       <img src="toffe.png" alt="Restaurant 2" class="w-full h-40 object-cover rounded-md mb-4" >
-                        <h3 class="text-lg font-semibold text-gray-800">Toffee Cake</h3>
-                           <span class="flex items-center justify-start mt-[1px] -ml-[6px] ">
-                      <span class="material-symbols-outlined text-yellow-500 text-sm ">
-                            location_on   </span> <span class="text-yellow-500 text-lg">Burger Arena </span>
-                      </span>
-                        <button class="text-violet-600 font-bold bg-red-300 ml-0 w-full rounded-lg shadow-md p-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">Order Now</button>
-                    </div>
-                    <div class="bg-white  md:col-span-2  rounded-lg shadow-md p-4">
-                        <img src="doncake.png" alt="Restaurant 3" class="w-full h-40 object-cover rounded-md mb-4">
-                        <h3 class="text-lg font-semibold text-gray-800">Donut Cake</h3>
-                       <span class="flex items-center justify-start mt-[1px] -ml-[6px] ">
-                      <span class="material-symbols-outlined text-yellow-500 text-sm ">
-                            location_on   </span> <span class="text-yellow-500 text-lg">Burger Arena </span>
-                      </span>
-                        <button class="text-violet-600 font-bold bg-red-300 w-full ml-0 rounded-lg shadow-md p-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">Order Now</button>
-                    </div>
-                     <div class="bg-white  md:col-span-2  rounded-lg shadow-md p-4">
-                        <img src="sandwich.png" alt="Restaurant 4" class="w-full h-40 object-cover rounded-md mb-4">
-                        <h3 class="text-lg font-semibold text-gray-800">Sandwich</h3>
-                        <span class="flex items-center justify-start mt-[1px] -ml-[6px] ">
-                      <span class="material-symbols-outlined text-yellow-500 text-sm ">
-                            location_on   </span> <span class="text-yellow-500 text-lg">Burger Arena </span>
-                      </span>
-                        <button class="text-violet-600 font-bold bg-red-300 w-full ml-0 rounded-lg shadow-md p-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">Order Now</button>
-                    </div>
-                         <div class="bg-white  md:col-span-2  rounded-lg shadow-md p-4">
-                        <img src="thai soup.png" alt="Restaurant 4" class="w-full h-40 object-cover rounded-md mb-4">
-                          <h3 class="text-lg font-semibold text-gray-800">Thai Soup</h3>
-                        <span class="flex items-center justify-start mt-[1px] -ml-[6px] ">
-                      <span class="material-symbols-outlined text-yellow-500 text-sm ">
-                            location_on   </span> <span class="text-yellow-500 text-lg">Burger Arena </span>
-                      </span>
-                        <button class="text-violet-600 font-bold bg-red-300 w-full ml-0 rounded-lg shadow-md p-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">Order Now</button>
-                    </div>
-                    <div class=" sidebutton flex  bg-white md:mt-0 rounded-full shadow-md hover:bg-yellow-300 cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300 items-center justify-center w-12 h-12 mt-30">
-
-    <span class="material-symbols-outlined text-yellow-500 text-3xl font-bold transition duration-300 hover:text-white">
-        chevron_right
-    </span>
-
-</div>
-                  
-                </div>
-                  <div class="bg-white rounded-full shadow-md flex bottombutton hover:bg-yellow-300  cursor-pointer hover:ring-2 hover:shadow-md hover:ring-pink-200 transition duration-300  items-center justify-center w-12 h-12 mt-4">                                
-            
-                        <span class="material-symbols-outlined text-yellow-500 py-2 px-2 text-3xl font-bold hover:text-white">
-                            chevron_right
-                            </span>  
-                  
-                    </div>
-                </div>
-                
-    
-             </div>
-          
-         
-           
-            <div class="w-full mb-10 h-auto bg-gradient-to-bl from-grey-200 to-rose-100 md:col-span-12 flex flex-col items-center justify-center ">
-                    <div class="flex items-center justify-center ">
-                    <h2 class="text-2xl font-bold text-gray-800 text-center mb-12">
-                        Featured Restaurants
-                    </h2>
-                    </div>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-15">
-                        <div class="bg-white">
-                            <span class=" w-auto h-7 text-[16px]  bg-orange-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
-                             <span class=" w-auto h-7 text-[16px]  bg-yellow-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
-                            <img src="foodword.png" alt="Restaurant 1" class="w-full  object-cover rounded-md mb-4" >
-                            <div class="flex items-center justify-start px-1 py-1">
-                                <img src="foodworldimg.png" alt="Greys Vage" class="w-10 h-10 border-white  mb-1 object-cover       border-2 border-white">
-                                <div class=" flex flex-col items-start ml-4 justify-start"> 
-                                <h3 class="text-lg font-semibold text-gray-800 ">Foodworld</h3>
-                                <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.1 </span></span>
-                                  
-                                </div>
-                               
-
-                            </div>
-                            <p class="text-white ml-15 text-center w-3/5 font-bold bg-green-300 ml-0 rounded-lg shadow-md py-2">Open</p>                                                                                      
-                        </div>
-                             <div class="bg-white">
-                            <span class=" w-auto h-7 text-[16px]  bg-orange-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
-                             <span class=" w-auto h-7 text-[16px]  bg-yellow-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
-                            <img src="pizzahub1.png" alt="Restaurant 1" class="w-full  object-cover rounded-md mb-4" >
-                            <div class="flex items-center justify-start px-1 py-1">
-                                <img src="pizzaLogo.png" alt="Greys Vage" class="w-10 h-10 border-white   object-cover       border-2 border-white">
-                                <div class=" flex flex-col items-start ml-4 justify-start"> 
-                                <h3 class="text-lg font-semibold text-gray-800 ">Pizzahub</h3>
-                                <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.2 </span></span>
-                                  
-                                </div>
-                               
-
-                            </div>
-                               <p class="text-blue-500 text-center w-3/5 font-bold ml-15 bg-green-300 p-2 rounded-lg shadow-md ">Open Tomorrow</p>                                                                                     
-                        </div>
-                            
-                         <div class="bg-white">
-                            <span class=" w-auto h-7 text-[16px]  bg-orange-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
-                             <span class=" w-auto h-7 text-[16px]  bg-yellow-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
-                            <img src="Image (8).png" alt="Restaurant 1" class="w-full  object-cover rounded-md mb-4" >
-                            <div class="flex items-center justify-start px-1 py-1">
-                                <img src="donutslogo.png" alt="Greys Vage" class="w-10 h-10 border-white  mb-1 object-cover      border-2 border-white">
-                                <div class=" flex flex-col items-start ml-4 justify-start"> 
-                                <h3 class="text-lg font-semibold text-gray-800 ">Donuts hut</h3>
-                                <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.4 </span></span>
-                                  
-                                </div>
-                               
-
-                            </div>
-                            <p class="text-blue-500 text-center w-3/5 font-bold ml-15 bg-green-300 p-2 rounded-lg shadow-md ">Open Tomorrow</p>                                                                                         
-                        </div>
-                            
-                         <div class="bg-white">
-                            <span class=" w-auto h-7 text-[16px]  bg-orange-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
-                             <span class=" w-auto h-7 text-[16px]  bg-yellow-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
-                            <img src="donut2.png" alt="Restaurant 1" class="w-full  object-cover rounded-md mb-4" >
-                            <div class="flex items-center justify-start px-1 py-1">
-                                <img src="Image (10).png" alt="Greys Vage" class="w-10 h-10 border-white  mb-1 object-cover border-2 border-white">
-                                <div class=" flex flex-col items-start ml-4 justify-start"> 
-                                <h3 class="text-lg font-semibold text-gray-800 ">Donuts hut</h3>
-                                <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.5 </span></span>
-                                  
-                                </div>
-                               
-
-                            </div>
-                            <p class="text-blue-500 text-center w-3/5 font-bold ml-15 bg-green-300 p-2 rounded-lg shadow-md ">Open Tomorrow</p>                                                                                         
-                        </div>
-                            
-                         <div class="bg-white ">
-                            <span class=" w-auto h-7 text-[16px]  bg-orange-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
-                             <span class=" w-auto h-7 text-[16px]  bg-yellow-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
-                            <img src="ruby.png" alt="Restaurant 1" class="w-full  object-cover rounded-md mb-4" >
-                            <div class="flex items-center justify-start px-1 py-1">
-                                <img src="rubylogo.png" alt="Greys Vage" class="w-10 h-10 border-white rounded-full mb-1 object-cover  rounded-full     border-2 border-white">
-                                <div class=" flex flex-col items-start ml-4 justify-start"> 
-                                <h3 class="text-lg font-semibold text-gray-800 ">Ruby Tuesday</h3>
-                                <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.9 </span></span>
-                                  
-                                </div>
-                               
-
-                            </div>
-                            <p class="text-white ml-15 text-center w-3/5 font-bold bg-green-300 ml-0 rounded-lg shadow-md py-2">Open</p>                                                                                         
-                        </div>
-                            
-                         <div class="bg-white">
-                            <span class=" w-auto h-7 text-[16px]  bg-orange-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
-                             <span class=" w-auto h-7 text-[16px]  bg-yellow-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
-                            <img src="kfc.png" alt="Restaurant 1" class="w-full  object-cover rounded-md mb-4" >
-                            <div class="flex items-center justify-start px-1 py-1">
-                                <img src="kfclogo.png" alt="Greys Vage" class="w-10 h-10 border-white rounded-full mb-1 object-cover  rounded-full     border-2 border-white">
-                                <div class=" flex flex-col items-start ml-4 justify-start"> 
-                                <h3 class="text-lg font-semibold text-gray-800 ">KFC</h3>
-                                <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">3.5 </span></span>
-                                  
-                                </div>
-                               
-
-                            </div>
-                            <p class="text-blue-500 text-center w-3/5 font-bold ml-15 bg-green-300 p-2 rounded-lg shadow-md ">Open Tomorrow</p>                                                                                         
-                        </div>
-                            
-                         <div class="bg-white">
-                            <span class=" w-auto h-7 text-[16px]  bg-orange-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
-                             <span class=" w-auto h-7 text-[16px]  bg-yellow-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
-                            <img src="red.png" alt="Restaurant 1" class="w-full  object-cover rounded-md mb-4" >
-                            <div class="flex items-center justify-start px-1 py-1">
-                                <img src="redlogo.png" alt="Greys Vage" class="w-10 h-10 border-white rounded-full mb-1 object-cover  rounded-full     border-2 border-white">
-                                <div class=" flex flex-col items-start ml-4 justify-start"> 
-                                <h3 class="text-lg font-semibold text-gray-800 ">Red Square</h3>
-                                <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.9 </span></span>
-                                  
-                                </div>
-                               
-
-                            </div>
-                        <p class="text-blue-500 text-center w-3/5 font-bold ml-15 bg-green-300 p-2 rounded-lg shadow-md ">Open Tomorrow</p>                                                                                   
-                        </div>
-                            
-                         <div class="bg-white">
-                            <span class=" w-auto h-7 text-[16px]  bg-orange-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-2 absolute z-10"><i class="fa-solid fa-tag"></i> 15% off</span>
-                             <span class=" w-auto h-7 text-[16px]  bg-yellow-500 rounded text-white font-bold  spacing-none  text-center px-2 mt-3 ml-28 absolute z-10"><i class="fa-solid fa-clock"></i> Fast</span>
-                            <img src="taco.png" alt="Restaurant 1" class="w-full  object-cover rounded-md mb-4" >
-                            <div class="flex items-center justify-start px-1 py-1">
-                                <img src="tacologo.png" alt="Greys Vage" class="w-10 h-10 border-white rounded-full mb-1 object-cover  rounded-full     border-2 border-white">
-                                <div class=" flex flex-col items-start ml-4 justify-start"> 
-                                <h3 class="text-lg font-semibold text-gray-800 ">Taco Bell</h3>
-                                <span><i class="fa-solid fa-star text-yellow-500"></i><span class="text-yellow-500 font-bold ml-1 text-lg">4.0 </span></span>
-                                  
-                                </div>
-                               
-
-                            </div>
-                          <p class="text-blue-500 text-center w-3/5 font-bold ml-15 bg-green-300 p-2 rounded-lg shadow-md ">Open Tomorrow</p>   
-                                                                                                                
-                        </div>
-                      
-                                                
-                       </div>
-
-                          <div class="flex justify-center flex-row items-center text-center">
-                             <button class="text-red-300 bg-cyan-500 shadow-lg shadow-cyan-500/50  font-bold w-full px-15  my-6 text-2xl rounded-xl shadow-md py-2 hover:bg-yellow-300 hover:text-white transition duration-500 cursor-pointer">View All<i class="fa-solid fa-angle-right"></i>
-</button>
-   
-                        </div>
-            </div>
-            <div>
-
-    
-        </div>
-       
-</div>
-    
 </body>
 </html>
